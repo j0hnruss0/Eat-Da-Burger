@@ -1,0 +1,46 @@
+<div class="top-row">
+    <img src="/pic" alt="missing-burger" />
+    <h1>EAT-DA-BURGER!!</h1>
+</div>
+<div class="middle-row">
+    <div id="uneaten">
+        <h3>Ready to eat!</h3>
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    <li class="uneaten-list">
+                        {{burger_name}}&nbsp;&nbsp;&nbsp;         
+                        <button class="eat-button" data-id="{{id}}">
+		                    CHOMP!
+	                    </button>
+    
+                    </li>
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+    <div id="eaten">
+        <h3>Burgers eaten</h3>
+        <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                    <li class="uneaten-list">
+                        {{burger_name}}&nbsp;&nbsp;&nbsp;(Yum!)
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<div class="bottom-row">
+    <div id="text-div">
+        <form class="cook-form">
+            <label for="new-burger"><h3>Enter new burger:<h3></label><br>
+            <textarea id="new-burger" rows="3" cols="50"></textarea><br>
+            <button type="submit" id="burg-make-btn">Make Burger</button>
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <p>Made by John Russo, 2019</p>
+</div>
