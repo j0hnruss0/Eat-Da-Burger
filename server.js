@@ -1,6 +1,6 @@
 var express = require("express");
+var routes = require("./controllers/burger_controllers.js");
 
-require("dotenv").config();
 var PORT = process.env.PORT || 3000;
 var app = express();
 
@@ -14,7 +14,6 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burger_controllers.js");
 app.use(routes);
 
 app.listen(PORT, function() {
