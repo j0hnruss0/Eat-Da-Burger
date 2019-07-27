@@ -16,9 +16,6 @@ var connection = new Client({connectionString: process.env.DATABASE_URL,
   ssl: true,
 });
 
-connection.connect();
-
-
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
