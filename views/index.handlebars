@@ -7,6 +7,7 @@
         <h3>Ready to eat!</h3>
         <ul>
             {{#each burgers}}
+            {{console.log("CHECKING FOR BURGERS",burgers)}}
                 {{#unless devoured}}
                     <li class="uneaten-list">
                         {{burger_name}}&nbsp;&nbsp;&nbsp;         
