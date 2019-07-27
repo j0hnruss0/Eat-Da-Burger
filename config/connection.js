@@ -10,7 +10,7 @@ require("dotenv").config();
 //   database: "burgers_db"
 // });
 
-var Client = require("pg");
+var { Client } = require("pg");
 
 var connection = new Client({connectionString: process.env.DATABASE_URL,
   ssl: true,
