@@ -5,5 +5,5 @@ USE burgers_db;
 CREATE TABLE burgers (
 	id SERIAL PRIMARY KEY,
     burger_name VARCHAR(100) NOT NULL,
-    devoured BOOLEAN DEFAULT false,
+    devoured BOOLEAN DEFAULT false
 );
