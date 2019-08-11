@@ -7,4 +7,4 @@ This app uses Node JS, Express, Express-Handlebars, Path JS, mySQL, and a self-m
 
 ### Try "Eat-Da-Burger" for yourself!
 
-[Link to Heroku App]()
+[Link to Heroku App](https://lit-cove-14809.herokuapp.com/)
